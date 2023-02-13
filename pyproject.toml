@@ -1,0 +1,27 @@
+[tool.pytest.ini_options]
+pythonpath = [
+    "."
+]
+
+
+[tool.poetry]
+name = "wolt-backend-calculator"
+version = "0.1.0"
+description = "Submission for assignment for Wolt's 2023 summer trainee position"
+authors = ["Phornphawit Manasut"]
+readme = "README.md"
+packages = [{include = "wolt_backend_calculator"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pytest = "^7.2.1"
+fastapi = "^0.89.1"
+uvicorn = "^0.20.0"
+httpx = "^0.23.3"
+pytz = "^2022.7.1"
+jupyter = "^1"
+
+
+[build-system]
+requires = ["poetry==1.3.2", "poetry-core"]
+build-backend = "poetry.core.masonry.api"
